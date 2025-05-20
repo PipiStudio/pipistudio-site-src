@@ -4,7 +4,7 @@ const router = new Navigo('/');
 
 router.on("/", function () {
   document.title = "呆呆游研社";
-  fetch("/pages/home.html")
+  fetch("/src/pages/home.html")
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("app").innerHTML = data;
@@ -13,7 +13,7 @@ router.on("/", function () {
 
 router.on("/projects", function () {
   document.title = "项目";
-  fetch("/pages/projects.html")
+  fetch("/src/pages/projects.html")
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("app").innerHTML = data;
