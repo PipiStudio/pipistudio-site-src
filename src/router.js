@@ -1,7 +1,7 @@
 import Navigo from "navigo"
 
 const router = new Navigo('/');
-
+router.navigate('/projects');
 router.on("/", function () {
   document.title = "呆呆游研社";
   fetch("/src/pages/home.html")
