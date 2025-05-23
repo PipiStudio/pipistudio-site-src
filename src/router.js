@@ -7,6 +7,7 @@ router.on("/", function () {
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("app").innerHTML = data;
+      router.updatePageLinks()
     });
 });
 
